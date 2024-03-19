@@ -3,9 +3,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import logging
-from llama_index.core.indices import (
-    VectorStoreIndex,
-)
+from llama_index.core import VectorStoreIndex
+from llama_parse import LlamaParse
 from app.engine.constants import STORAGE_DIR
 from app.engine.loader import get_documents
 from app.settings import init_settings
@@ -13,6 +12,9 @@ from app.settings import init_settings
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
+parser = LlamaParse(
+    result_type="markdown"  # "markdown" and "text" are available
+)
 
 
 def generate_datasource():
