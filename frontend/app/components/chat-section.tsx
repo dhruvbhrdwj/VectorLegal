@@ -4,6 +4,8 @@ import { useChat } from "ai/react";
 import { useMemo } from "react";
 import { insertDataIntoMessages } from "./transform";
 import { ChatInput, ChatMessages } from "./ui/chat";
+import UploadButton from "./ui/chat/chat-upload_button";
+import ChatCreateAssistant from "./ui/chat/chat-create_assistant"
 
 export default function ChatSection() {
   const {
@@ -34,6 +36,10 @@ export default function ChatSection() {
         reload={reload}
         stop={stop}
       />
+      <div className="flex flex-row ">
+      <UploadButton/>
+      <ChatCreateAssistant/>
+      </div>
       <ChatInput
         input={input}
         handleSubmit={handleSubmit}
