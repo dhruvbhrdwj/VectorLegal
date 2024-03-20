@@ -20,7 +20,7 @@ export default function ChatInput(props: ChatInputProps) {
     <>
       <form
         onSubmit={props.handleSubmit}
-        className="flex items-start justify-between w-full max-w-5xl p-4 bg-white rounded-xl shadow-xl gap-4"
+        className="flex items-start justify-between w-full max-w-9xl p-4 bg-white rounded-xl shadow-xl gap-4"
       >
         <input
           autoFocus
