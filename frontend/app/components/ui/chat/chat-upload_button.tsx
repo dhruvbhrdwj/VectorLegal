@@ -53,7 +53,7 @@ const UploadButton: React.FC = () => {
         onChange={handleFileChange}
       />
       <button
-        className={`p-4 text-black mr-4 rounded-xl shadow-xl ${
+        className={`p-4 text-white mr-4 rounded-xl shadow-xl ${
           uploaded
             ? 'bg-green-500 hover:bg-green-700'
             : 'bg-gradient-to-r from-cyan-500 to-sky-500 hover:bg-opacity-75'
