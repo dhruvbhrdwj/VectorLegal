@@ -29,7 +29,7 @@ const UploadButton: React.FC = () => {
         formData.append('files', file);
       });
       try {
-        const response = await fetch('http://localhost:8000/upload', {
+        const response = await fetch('https://vectorlegal.onrender.com/upload', {
           method: 'POST',
           body: formData,
         });
