@@ -7,7 +7,7 @@ function ChatCreateAssistant() {
 
   function createAssistant() {
     setIsCreating(true); // Indicate the process has started
-    fetch('http://localhost:8000/trigger-processing', {
+    fetch('https://vectorlegal.onrender.com/trigger-processing', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
